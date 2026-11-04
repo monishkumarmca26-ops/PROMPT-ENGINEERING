@@ -146,10 +146,5 @@ Requirements:
 - Never invent a new label.
 - If the query cannot reasonably be classified, output Unknown.
 
- INPUT
-
-Customer query: I cannot login to my account
-
- RESPONSE
-
-Return the single best-fitting category label and nothing else.
+ INPUT:-
+ Customer query: {{customer_query}}
