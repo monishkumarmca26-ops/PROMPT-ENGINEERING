@@ -1,84 +1,227 @@
- 🚀 Prompt Engineering
+🚀 PROMPT ENGINEERING
 
-A collection of carefully designed and optimized prompts for AI tasks, focused on accuracy, clarity, context awareness, and reliable outputs.
+A collection of carefully designed and structured prompts for practical AI applications, focusing on accuracy, contextual understanding, instruction design, and reliable outputs.
 
- 📌 About This Repository
+📌 About This Repository
 
-This repository contains prompt engineering projects designed to improve the performance of Large Language Models (LLMs) through structured instructions, clear classification rules, contextual understanding, and consistent output formats.
+This repository contains hands-on prompt engineering projects designed to improve the performance and reliability of Large Language Models (LLMs).
 
-The goal is to create prompts that handle real-world tasks accurately while reducing ambiguity and classification errors.
+Each project addresses a real-world problem using structured instructions, classification frameworks, contextual reasoning, input validation, and output constraints.
 
- 📂 Projects
+The objective is to explore how effective prompt design can make AI systems more accurate, consistent, and useful.
 
- 1. E-Commerce Sentiment Analysis
-A structured prompt that classifies customer reviews into three sentiment categories:
+📂 Projects
 
-- **Positive** — Customer satisfaction, praise, or favorable feedback.
-- **Negative** — Customer dissatisfaction, complaints, or unfavorable feedback.
-- **Neutral** — Factual statements or reviews without clear positive or negative sentiment.
+1. E-Commerce Sentiment Analysis
 
-Key features:
-- Context-aware sentiment classification
-- Negation and sarcasm handling
-- Mixed-sentiment evaluation
-- Implicit sentiment interpretation
-- Strict, single-label output
+Classifies customer reviews into three sentiment categories:
 
- 2. E-Commerce Customer Query Classification
-A prompt designed to classify e-commerce customer support queries into predefined categories based on the customer's primary issue or requested action.
+Positive
 
-Key features:**
-- Intent-based classification
-- Clear category definitions
-- Context-sensitive interpretation
-- Handling of ambiguous queries
-- Consistent output formatting
+Negative
 
- 🛠️ Concepts Covered
+Neutral
 
-- Prompt Engineering
-- Generative AI
-- Large Language Models (LLMs)
-- Natural Language Processing (NLP)
-- Text Classification
-- Sentiment Analysis
-- Instruction Design
-- Edge-Case Handling
+Key Features:
 
- ▶️ How to Use
+Context-aware sentiment classification
 
-1. Open the prompt file for the task you want to perform.
-2. Copy the complete prompt into a compatible AI model.
-3. Replace the input placeholder with your customer review or query.
-4. Run the prompt and observe the classification.
-5. Test different examples to evaluate the quality and consistency of the output.
+Negation and sarcasm handling
 
- 🎯 Objectives
+Mixed-sentiment evaluation
 
-- Design clear and effective AI prompts.
-- Improve classification consistency.
-- Handle negation, sarcasm, and mixed opinions.
-- Reduce ambiguity and common classification errors.
-- Develop reusable prompts for practical AI applications.
+Implicit sentiment interpretation
 
- 🔮 Future Improvements
+Strict single-label output
 
-- Add more prompt engineering projects.
-- Create test datasets with expected outputs.
-- Evaluate classification accuracy using test cases.
-- Compare prompt versions and document improvements.
-- Explore additional AI and natural language processing applications.
+View Prompt
 
- 👨‍💻 Author
+2. E-Commerce Query Classification
 
-**Monish Kumar M**
+Identifies the primary intent behind customer support queries and assigns the appropriate predefined category.
 
- ⭐ Contributions
+Key Features:
 
-Suggestions, improvements, and new prompt ideas are welcome.
+Intent-based classification
+
+Multiple query category handling
+
+Context-sensitive interpretation
+
+Ambiguity detection
+
+Strict output formatting
+
+View Prompt
+
+3. Customer Query Urgency Classification
+
+Evaluates customer support queries and determines their urgency level.
+
+Classification Categories:
+
+High
+
+Medium
+
+Low
+
+Key Features:
+
+Severity and impact assessment
+
+Time-sensitivity evaluation
+
+Financial and security risk detection
+
+Priority decision hierarchy
+
+False urgency prevention
+
+View Prompt
+
+4. Prompt Injection Detection
+
+Detects attempts to manipulate, override, or bypass predefined AI system instructions.
+
+Classification Categories:
+
+SAFE
+
+INJECTION
+
+Key Features:
+
+System instruction protection
+
+Direct and indirect injection detection
+
+Role manipulation detection
+
+Context-aware classification
+
+False-positive reduction
+
+Untrusted input handling
+
+View Prompt
+
+5. Flight Booking Information Extraction
+
+Extracts mandatory flight-booking information, identifies missing or ambiguous fields, and generates relevant follow-up questions.
+
+Required Information:
+
+Passenger Name
+
+Departure City
+
+Destination City
+
+Travel Date
+
+Number of Passengers
+
+Travel Class
+
+Key Features:
+
+Structured information extraction
+
+Missing-field detection
+
+Ambiguity and contradiction handling
+
+Conversational context retention
+
+Dynamic question generation
+
+No-assumption validation
+
+View Prompt
+
+🧠 Concepts Covered
+
+Prompt Engineering
+
+Generative AI
+
+Large Language Models (LLMs)
+
+Natural Language Processing (NLP)
+
+Text Classification
+
+Sentiment Analysis
+
+Contextual Understanding
+
+Few-Shot Prompting
+
+Instruction Hierarchy
+
+Prompt Injection Detection
+
+Information Extraction
+
+Data Validation
+
+Edge-Case Handling
+
+Output Constraint Design
+
+🛠️ How to Use
+
+Navigate to the required project.
+
+Open its corresponding Markdown prompt file.
+
+Copy the complete prompt into a compatible AI model.
+
+Provide the customer query or input in the designated input section.
+
+Evaluate the generated output.
+
+Test different scenarios, including ambiguous and edge-case inputs.
+
+🎯 Project Objectives
+
+Develop reusable and effective AI prompts.
+
+Improve classification consistency.
+
+Reduce ambiguity and incorrect assumptions.
+
+Design robust instruction-following systems.
+
+Explore practical applications of prompt engineering.
+
+Understand how prompt structure influences LLM behaviour.
+
+🔬 Future Improvements
+
+Develop benchmark datasets for every project.
+
+Measure accuracy, precision, recall, and F1-score.
+
+Compare different prompt versions.
+
+Evaluate edge cases and failure scenarios.
+
+Build Python-based prompt evaluation tools.
+
+Explore structured JSON outputs and AI application integration.
+
+👨‍💻 Author
+
+Monish Kumar M
+
+MCA Student | AI & Prompt Engineering Enthusiast
+
+⭐ Contributions
+
+Suggestions, improvements, and new project ideas are welcome.
 
 If you find this repository useful, consider giving it a star!
 
----
-
-*Built to explore and improve practical prompt engineering for AI-powered applications.*
+Built to explore, experiment with, and improve practical prompt engineering for real-world AI applications.
