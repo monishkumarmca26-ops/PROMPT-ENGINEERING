@@ -1,0 +1,48 @@
+{
+  "project": "Flight Booking Information Extraction",
+  "version": "1.0",
+  "test_cases": [
+    {
+      "id": "F001",
+      "input": "I am Rahul. I want to book a flight from Bengaluru to Delhi.",
+      "expected_output": {
+        "passenger_name": "Rahul",
+        "departure_city": "Bengaluru",
+        "destination_city": "Delhi",
+        "travel_date": null,
+        "number_of_passengers": null,
+        "travel_class": null
+      },
+      "category": "Missing information",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "F002",
+      "input": "I am Priya. Two tickets from Mumbai to Chennai on 20 November 2026 in Business class.",
+      "expected_output": {
+        "passenger_name": "Priya",
+        "departure_city": "Mumbai",
+        "destination_city": "Chennai",
+        "travel_date": "2026-11-20",
+        "number_of_passengers": 2,
+        "travel_class": "Business"
+      },
+      "category": "Complete information",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "F003",
+      "input": "Book two tickets from Hyderabad to Delhi next Friday.",
+      "expected_output": {
+        "passenger_name": null,
+        "departure_city": "Hyderabad",
+        "destination_city": "Delhi",
+        "travel_date": "REQUIRES_DATE_VALIDATION",
+        "number_of_passengers": 2,
+        "travel_class": null
+      },
+      "category": "Relative date",
+      "difficulty": "Hard"
+    }
+  ]
+}
