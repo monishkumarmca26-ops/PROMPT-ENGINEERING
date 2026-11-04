@@ -1,0 +1,41 @@
+{
+  "project": "Sentiment Analysis",
+  "version": "1.0",
+  "test_cases": [
+    {
+      "id": "S001",
+      "input": "The product is absolutely amazing. I love it!",
+      "expected_output": "Positive",
+      "category": "Clear positive",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "S002",
+      "input": "The delivery was late and the product arrived damaged.",
+      "expected_output": "Negative",
+      "category": "Clear negative",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "S003",
+      "input": "The product arrived yesterday.",
+      "expected_output": "Neutral",
+      "category": "Factual statement",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "S004",
+      "input": "The camera is excellent, but the battery is terrible.",
+      "expected_output": "Mixed",
+      "category": "Mixed sentiment",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "S005",
+      "input": "Wonderful! Another two weeks waiting for my order.",
+      "expected_output": "Negative",
+      "category": "Sarcasm",
+      "difficulty": "Hard"
+    }
+  ]
+}
