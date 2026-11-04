@@ -1,0 +1,41 @@
+{
+  "project": "Customer Query Urgency Classification",
+  "version": "1.0",
+  "test_cases": [
+    {
+      "id": "U001",
+      "input": "Someone is stealing money from my bank account.",
+      "expected_output": "High",
+      "category": "Active financial threat",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "U002",
+      "input": "My refund has been pending for seven days.",
+      "expected_output": "Medium",
+      "category": "Delayed refund",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "U003",
+      "input": "What subscription plans do you offer?",
+      "expected_output": "Low",
+      "category": "General inquiry",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "U004",
+      "input": "I am furious! Change my profile picture immediately.",
+      "expected_output": "Low",
+      "category": "Emotional language",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "U005",
+      "input": "My payment gateway is down, preventing hundreds of customers from paying.",
+      "expected_output": "High",
+      "category": "Operational disruption",
+      "difficulty": "Hard"
+    }
+  ]
+}
