@@ -1,0 +1,34 @@
+{
+  "project": "E-Commerce Query Classification",
+  "version": "1.0",
+  "test_cases": [
+    {
+      "id": "E001",
+      "input": "Where is my package?",
+      "expected_output": "Order Tracking",
+      "category": "Tracking",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "E002",
+      "input": "I received a damaged product. I want my money back.",
+      "expected_output": "Refund",
+      "category": "Refund request",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "E003",
+      "input": "I want to cancel my order.",
+      "expected_output": "Order Cancellation",
+      "category": "Cancellation",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "E004",
+      "input": "My payment was deducted but my order was not placed.",
+      "expected_output": "Payment Issue",
+      "category": "Payment failure",
+      "difficulty": "Medium"
+    }
+  ]
+}
