@@ -1,0 +1,121 @@
+    {
+      "id": "RBG014",
+      "category": "output_language",
+      "input": {
+        "candidate_description": "Created a student attendance application using Java to record daily attendance.",
+        "output_language": "English"
+      },
+      "expected_output": {
+        "resume_bullet_points": [
+          "Created a Java-based student attendance application to record daily attendance."
+        ]
+      },
+      "checks": [
+        "Uses the requested output language",
+        "Keeps technical terminology accurate",
+        "Does not add unsupported functionality"
+      ]
+    },
+    {
+      "id": "RBG015",
+      "category": "unsupported_target_role_keywords",
+      "input": {
+        "candidate_description": "Created a static portfolio website using HTML and CSS.",
+        "target_role": "Machine Learning Engineer"
+      },
+      "expected_output": {
+        "resume_bullet_points": [
+          "Created a static portfolio website using HTML and CSS."
+        ]
+      },
+      "checks": [
+        "Does not add machine learning skills",
+        "Does not distort the project to match the target role",
+        "Preserves the actual accomplishment"
+      ]
+    },
+    {
+      "id": "RBG016",
+      "category": "derived_percentage",
+      "input": {
+        "candidate_description": "Automated a data entry process. Previously it took 40 minutes per task, and now it takes 30 minutes per task."
+      },
+      "expected_output": {
+        "resume_bullet_points": [
+          "Automated a data entry process, reducing task completion time from 40 minutes to 30 minutes (25%)."
+        ]
+      },
+      "checks": [
+        "Calculates percentage reduction using explicit before-and-after values",
+        "Uses comparable units",
+        "Does not invent additional impact"
+      ]
+    },
+    {
+      "id": "RBG017",
+      "category": "inconsistent_measurement_units",
+      "input": {
+        "candidate_description": "Reduced processing time from 2 hours per batch to 30 minutes per record."
+      },
+      "expected_output": {
+        "clarification_needed": "Are the before-and-after measurements based on the same unit of work, such as one batch or one record?"
+      },
+      "checks": [
+        "Does not calculate a percentage from incomparable measurements",
+        "Requests clarification about measurement comparability"
+      ]
+    },
+    {
+      "id": "RBG018",
+      "category": "publication_achievement",
+      "input": {
+        "candidate_description": "Published a research paper on renewable energy forecasting in our university journal. I was the first author."
+      },
+      "expected_output": {
+        "resume_bullet_points": [
+          "Published a first-author research paper on renewable energy forecasting in the university journal."
+        ]
+      },
+      "checks": [
+        "Supports academic and publication achievements",
+        "Preserves first-author status",
+        "Does not invent journal rankings or citation counts"
+      ]
+    },
+    {
+      "id": "RBG019",
+      "category": "certification",
+      "input": {
+        "candidate_description": "Completed the Python for Everybody course offered by the University of Michigan."
+      },
+      "expected_output": {
+        "resume_bullet_points": [
+          "Completed the Python for Everybody course offered by the University of Michigan."
+        ]
+      },
+      "checks": [
+        "Does not inflate a course into a professional certification",
+        "Preserves the course name and provider",
+        "Does not invent proficiency levels"
+      ]
+    },
+    {
+      "id": "RBG020",
+      "category": "code_mixed_input",
+      "input": {
+        "candidate_description": "Maine Python aur Pandas use karke sales data clean kiya aur monthly reports generate kiye.",
+        "output_language": "English"
+      },
+      "expected_output": {
+        "resume_bullet_points": [
+          "Cleaned sales data using Python and Pandas and generated monthly reports."
+        ]
+      },
+      "checks": [
+        "Understands code-mixed input",
+        "Translates meaning accurately",
+        "Does not add unsupported metrics or outcomes"
+      ]
+    }
+  ]
+}
