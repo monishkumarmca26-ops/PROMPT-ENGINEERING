@@ -66,7 +66,8 @@ Unknown
 N/A
 [INSERT ACADEMIC SCORE]
 Uninterpretable text
-Multiple conflicting scores without a clear designated value
+Multiple conflicting scores without a clear designated value 
+
 4.2 Annual Family Income Validation
 
 Verify that:
@@ -95,6 +96,23 @@ N/A
 Uninterpretable text
 Ambiguous currency
 Multiple conflicting income values without a clearly designated value
+
+ADDITIONAL NUMERICAL VALIDATION RULES
+Academic Score:
+
+The valid numerical range is 0% to 100%, inclusive.
+Any score below 0% or above 100% is invalid.
+A decimal value must not automatically be interpreted as a percentage unless its percentage meaning is explicitly established.
+Preserve all decimal places during comparison.
+Annual Family Income:
+
+Income must be zero or greater.
+Negative income values are invalid.
+Accept standard INR numerical formats, including ₹2,50,000, 250000, and 2,50,000.
+Reject ambiguous monetary values and currencies.
+Do not interpret monthly income as annual income unless an annual amount is explicitly supplied.
+If either input violates these numerical validation rules, return INSUFFICIENT_DATA.
+
 5. DATA INTEGRITY AND INTERPRETATION RULES
 Apply the following rules strictly:
 
