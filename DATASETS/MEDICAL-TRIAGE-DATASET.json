@@ -1,0 +1,114 @@
+
+{
+  "project": "Medical Triage Classification",
+  "description": "Sample test cases for classifying patient symptoms by medical urgency.",
+  "labels": [
+    "EMERGENCY",
+    "URGENT",
+    "ROUTINE",
+    "INSUFFICIENT_DATA"
+  ],
+  "test_cases": [
+    {
+      "id": 1,
+      "input": "I have severe chest pain and difficulty breathing.",
+      "expected_output": "EMERGENCY"
+    },
+    {
+      "id": 2,
+      "input": "I have a severe headache that started suddenly.",
+      "expected_output": "EMERGENCY"
+    },
+    {
+      "id": 3,
+      "input": "My face suddenly started drooping, but now it seems normal.",
+      "expected_output": "EMERGENCY"
+    },
+    {
+      "id": 4,
+      "input": "I am having suicidal thoughts and have a plan to act on them.",
+      "expected_output": "EMERGENCY"
+    },
+    {
+      "id": 5,
+      "input": "I have heavy bleeding during pregnancy.",
+      "expected_output": "EMERGENCY"
+    },
+    {
+      "id": 6,
+      "input": "I have a high fever and persistent vomiting.",
+      "expected_output": "URGENT"
+    },
+    {
+      "id": 7,
+      "input": "I am experiencing a new fever and I have a weakened immune system.",
+      "expected_output": "URGENT"
+    },
+    {
+      "id": 8,
+      "input": "My child has had a persistent fever for several days.",
+      "expected_output": "URGENT"
+    },
+    {
+      "id": 9,
+      "input": "I developed a mild rash after taking a new medication.",
+      "expected_output": "URGENT"
+    },
+    {
+      "id": 10,
+      "input": "I have had mild nasal congestion since yesterday.",
+      "expected_output": "ROUTINE"
+    },
+    {
+      "id": 11,
+      "input": "I want to know which vitamins are good for general health.",
+      "expected_output": "ROUTINE"
+    },
+    {
+      "id": 12,
+      "input": "I have a mild headache that feels similar to headaches I have experienced before.",
+      "expected_output": "ROUTINE"
+    },
+    {
+      "id": 13,
+      "input": "I feel unwell.",
+      "expected_output": "INSUFFICIENT_DATA"
+    },
+    {
+      "id": 14,
+      "input": "Something is wrong with my body.",
+      "expected_output": "INSUFFICIENT_DATA"
+    },
+    {
+      "id": 15,
+      "input": "I have been feeling strange lately, but I cannot explain what is happening.",
+      "expected_output": "INSUFFICIENT_DATA"
+    },
+    {
+      "id": 16,
+      "input": "My three-week-old baby has a temperature of 38 degrees Celsius.",
+      "expected_output": "EMERGENCY"
+    },
+    {
+      "id": 17,
+      "input": "My throat is swelling and I am struggling to breathe after eating peanuts.",
+      "expected_output": "EMERGENCY"
+    },
+    {
+      "id": 18,
+      "input": "I have moderate abdominal pain that is getting worse.",
+      "expected_output": "URGENT"
+    },
+    {
+      "id": 19,
+      "input": "My elderly father suddenly became confused and is not behaving normally.",
+      "expected_output": "EMERGENCY"
+    },
+    {
+      "id": 20,
+      "input": "I have had mild sneezing and a runny nose for one day.",
+      "expected_output": "ROUTINE"
+    }
+  ],
+  "note": "Educational test dataset only. Expected labels are illustrative and must be reviewed by qualified healthcare professionals before clinical use."
+}
