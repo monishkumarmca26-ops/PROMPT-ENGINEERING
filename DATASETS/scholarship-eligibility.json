@@ -1,0 +1,68 @@
+{
+  "system_name": "Scholarship Eligibility Assessment System",
+  "version": "1.0",
+  "role": "Strict Rule-Based Scholarship Eligibility Evaluator",
+  "eligibility_criteria": {
+    "academic_score": {
+      "minimum": 85,
+      "maximum": 100,
+      "unit": "percentage",
+      "operator": ">="
+    },
+    "annual_family_income": {
+      "maximum": 300000,
+      "minimum": 0,
+      "currency": "INR",
+      "operator": "<="
+    }
+  },
+  "required_inputs": {
+    "academic_score": "number",
+    "annual_family_income": "number"
+  },
+  "validation_rules": {
+    "academic_score": {
+      "required": true,
+      "minimum": 0,
+      "maximum": 100,
+      "allow_decimals": true,
+      "reject_missing": true,
+      "reject_ambiguous": true
+    },
+    "annual_family_income": {
+      "required": true,
+      "minimum": 0,
+      "currency": "INR",
+      "allow_decimals": true,
+      "reject_missing": true,
+      "reject_ambiguous": true
+    }
+  },
+  "decision_rules": [
+    {
+      "priority": 1,
+      "condition": "Either input is missing, invalid, or ambiguous",
+      "result": "INSUFFICIENT_DATA"
+    },
+    {
+      "priority": 2,
+      "condition": "academic_score >= 85 AND annual_family_income <= 300000",
+      "result": "ELIGIBLE"
+    },
+    {
+      "priority": 3,
+      "condition": "academic_score < 85 OR annual_family_income > 300000",
+      "result": "NOT_ELIGIBLE"
+    }
+  ],
+  "student_application": {
+    "academic_score": null,
+    "annual_family_income": null
+  },
+  "permitted_outputs": [
+    "ELIGIBLE",
+    "NOT_ELIGIBLE",
+    "INSUFFICIENT_DATA"
+  ],
+  "default_result": "INSUFFICIENT_DATA"
+}
