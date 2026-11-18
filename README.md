@@ -1,72 +1,34 @@
 🚀 Prompt Engineering Portfolio
 
-A collection of practical, structured, and reusable prompt engineering projects designed to explore real-world applications of Generative AI, Large Language Models (LLMs), and Natural Language Processing (NLP).
+A collection of 10 structured, reusable, and task-oriented prompt engineering projects designed to explore practical applications of Generative AI, Large Language Models (LLMs), and Natural Language Processing (NLP).
 
-This repository showcases how well-designed prompts can improve instruction following, contextual understanding, classification, information extraction, decision-making, and output consistency.
-
-The projects focus on building reliable, context-aware, and task-oriented AI systems through structured instructions, decision frameworks, validation rules, and systematic edge-case handling.
+This repository demonstrates how carefully designed prompts can improve instruction following, contextual understanding, classification, information extraction, decision-making, and output consistency.
 
 📌 About This Repository
 
-This portfolio contains a collection of prompt engineering projects developed around practical real-world problem statements.
+This portfolio contains 10 practical prompt engineering projects based on real-world problem statements.
 
-Each project demonstrates different prompt engineering techniques, including:
+Each project focuses on designing effective prompts using techniques such as:
 
 Role and task definition
-Instruction hierarchy and prioritization
+Instruction hierarchy
 Context-aware reasoning
-Text classification and categorization
-Structured information extraction
+Classification frameworks
+Input validation
 Few-shot prompting
-Input validation and missing information detection
-Ambiguity and contradiction resolution
 Edge-case handling
-Strict output formatting
+Ambiguity and contradiction resolution
+Strict output constraints
 Safety and reliability considerations
-Prompt injection resistance
 
-The primary objective is to understand how prompt design, decision rules, contextual information, and input constraints influence the quality and reliability of LLM-generated outputs.
+The primary objective is to understand how prompt structure, decision rules, and input handling influence the quality and reliability of AI-generated outputs.
 
 📂 Projects
-1. AI-Powered Resume Bullet Generator
+1. E-Commerce Sentiment Analysis
 
-Objective: Generate professional, achievement-oriented, and ATS-friendly resume bullet points based on user-provided experience, skills, and responsibilities.
+Objective: Analyze customer reviews and classify their overall sentiment.
 
-Key Features:
-
-Context-aware bullet point generation
-Professional language enhancement
-Action verb optimization
-Achievement-focused descriptions
-Resume content improvement
-Structured output generation
-
-Dataset: DATASETS/AI-POWERED-RESUME-BULLET-GENERATOR-DATASET.json
-
-2. AI-Powered ATS-Friendly Resume
-
-Objective: Generate and improve resume content while maintaining compatibility with Applicant Tracking Systems (ATS).
-
-Key Features:
-
-ATS-friendly content optimization
-Professional resume structuring
-Keyword relevance improvement
-Skills and experience alignment
-Clear and concise descriptions
-Structured resume generation
-
-Prompt: AI-POWERED-ATS-FRIENDLY-RESUME.md
-
-3. E-Commerce Sentiment Analysis
-
-Objective: Analyze customer reviews and identify their overall sentiment.
-
-Classification Labels:
-
-POSITIVE
-NEGATIVE
-NEUTRAL
+Classification Labels: POSITIVE, NEGATIVE, NEUTRAL
 
 Key Features:
 
@@ -79,21 +41,11 @@ Strict single-label output
 
 Prompt: SENTIMENT-ANALYSIS.md
 
-4. E-Commerce Customer Query Classification
+2. E-Commerce Customer Query Classification
 
 Objective: Identify the primary intent behind customer support queries and assign the appropriate category.
 
-Classification Categories:
-
-Delivery
-Shipping
-Refund
-Payment
-Cancellation
-Defect
-Return
-Account
-Unknown
+Classification Categories: Delivery, Shipping, Refund, Payment, Cancellation, Defect, Return, Account, Unknown.
 
 Key Features:
 
@@ -106,15 +58,11 @@ Strict output formatting
 
 Prompt: ECOMMERCE-QUERY-CLASSIFICATION.md
 
-5. Customer Query Urgency Classification
+3. Customer Query Urgency Classification
 
 Objective: Determine the urgency of customer support queries to help prioritize support requests.
 
-Classification Labels:
-
-HIGH
-MEDIUM
-LOW
+Classification Labels: HIGH, MEDIUM, LOW
 
 Key Features:
 
@@ -127,14 +75,11 @@ False urgency prevention
 
 Prompt: CUSTOMER-QUERY-URGENCY-CLASSIFICATION-ENGINE.md
 
-6. Advanced Prompt Injection Detection
+4. Advanced Prompt Injection Detection
 
 Objective: Identify attempts to manipulate, override, or bypass predefined system instructions through untrusted input.
 
-Classification Labels:
-
-SAFE
-INJECTION
+Classification Labels: SAFE, INJECTION
 
 Key Features:
 
@@ -148,18 +93,11 @@ False-positive reduction
 
 Prompt: SYSTEM-PROMPT-ADVANCED-PROMPT-INJ.md
 
-7. Intelligent Flight Booking Information Extraction
+5. Intelligent Flight Booking Information Extraction
 
 Objective: Extract and validate essential flight-booking information from natural-language conversations.
 
-Required Information:
-
-Passenger Name
-Departure City
-Destination City
-Travel Date
-Number of Passengers
-Travel Class
+Required Information: Passenger Name, Departure City, Destination City, Travel Date, Number of Passengers, Travel Class.
 
 Key Features:
 
@@ -172,16 +110,11 @@ No-assumption validation
 
 Prompt: SYSTEM-PROMPT-INTELLIGENT-FLIGHT.md
 
-8. Advanced Medical Triage Classification
+6. Advanced Medical Triage Classification
 
 Objective: Classify reported human patient symptoms according to their potential medical urgency.
 
-Classification Labels:
-
-EMERGENCY
-URGENT
-ROUTINE
-INSUFFICIENT_DATA
+Classification Labels: EMERGENCY, URGENT, ROUTINE, INSUFFICIENT_DATA
 
 Key Features:
 
@@ -190,18 +123,18 @@ Critical symptom recognition
 Patient-specific risk consideration
 Pregnancy and pediatric warning signs
 Mental health crisis considerations
-Historical and resolved symptom handling
+Resolved and historical symptom handling
 Insufficient information detection
 Medical prompt-injection resistance
 Strict single-label output
 
 Prompt: ADVANCED-MEDICAL-CLASSIFICATION.md
 
-Disclaimer: This is an educational prompt engineering project. It is not a clinically validated medical triage system and must not replace professional medical assessment.
+Disclaimer: This is an educational prompt engineering project, not a clinically validated medical triage system or a substitute for professional medical assessment.
 
-9. Scholarship Eligibility Assessment
+7. Scholarship Eligibility Assessment
 
-Objective: Evaluate scholarship eligibility using applicant information and predefined eligibility criteria.
+Objective: Assess scholarship eligibility using applicant information and predefined eligibility criteria.
 
 Key Features:
 
@@ -214,9 +147,24 @@ Structured data handling
 
 Prompt: SCHOLARSHIP-ELIGIBILITY-ASSESSMENT.md
 
-10. Context-Aware Email Generation
+8. AI-Powered ATS-Friendly Resume
 
-Objective: Generate relevant, professional, and contextually appropriate emails based on user instructions and communication requirements.
+Objective: Generate and optimize professional resume content while maintaining compatibility with Applicant Tracking Systems (ATS).
+
+Key Features:
+
+ATS-friendly resume content
+Professional resume structuring
+Keyword optimization
+Skills and experience alignment
+Clear and concise descriptions
+Structured resume generation
+
+Prompt: AI-POWERED-ATS-FRIENDLY-RESUME.md
+
+9. Context-Aware Email Generation
+
+Objective: Generate professional and contextually appropriate emails based on user instructions and communication requirements.
 
 Key Features:
 
@@ -229,7 +177,7 @@ Intent preservation
 
 Prompt: CONTEXT-AWARE-EMAIL-GENERATION.md
 
-11. Intelligent Meeting Scheduler
+10. Intelligent Meeting Scheduler
 
 Objective: Interpret natural-language meeting requests and identify the information required to schedule meetings effectively.
 
@@ -246,29 +194,27 @@ Prompt: INTELLIGENT-MEETING-SCHEDULER.md
 
 📊 Datasets
 
-The repository also includes datasets to support prompt testing, experimentation, and evaluation.
+The DATASETS directory contains a centralized JSON dataset covering all 10 prompt engineering projects.
 
-Available datasets:
+Dataset: AI-POWERED-RESUME-BULLET-GENERATOR-DATASET.json
 
-DATASETS/AI-POWERED-RESUME-BULLET-GENERATOR-DATASET.json
+The dataset is intended to support testing, experimentation, and evaluation across the project collection.
 
-Dataset objectives:
+Key Objectives:
 
-Provide structured examples for testing prompts.
-Evaluate generated outputs against expected results.
-Explore different input scenarios.
-Test ambiguous and edge-case inputs.
-Support future benchmark development.
-
-The dataset collection will be expanded as additional projects and evaluation scenarios are developed.
-
+Provide structured test examples.
+Support prompt validation and experimentation.
+Evaluate model responses against expected outputs.
+Test ambiguous and edge-case scenarios.
+Support consistency and reliability analysis.
+Enable future benchmark development.
 🧠 Concepts Covered
 Concept	Application
 Prompt Engineering	Structured prompt design
 Generative AI	LLM-based problem solving
 Natural Language Processing	Understanding natural-language inputs
 Text Classification	Sentiment, intent, and urgency classification
-Few-Shot Prompting	Learning from representative examples
+Few-Shot Prompting	Representative examples
 Instruction Hierarchy	Maintaining instruction boundaries
 Prompt Injection Detection	Identifying malicious instructions
 Information Extraction	Extracting structured information
@@ -276,36 +222,28 @@ Contextual Understanding	Interpreting meaning beyond keywords
 Data Validation	Identifying missing or inconsistent information
 Decision Frameworks	Applying predefined classification rules
 Output Constraints	Enforcing consistent response formats
-Edge-Case Handling	Improving robustness against unusual inputs
-Safety and Reliability	Reducing unsupported assumptions and unsafe outputs
+Edge-Case Handling	Improving robustness
+Safety and Reliability	Reducing unsupported assumptions
 🛠️ How to Use
 Navigate to the project you want to explore.
-Open the corresponding Markdown (.md) file.
-Review the problem statement, instructions, and decision rules.
+Open its corresponding Markdown (.md) file.
+Review the task description and classification or decision rules.
 Copy the prompt into a compatible AI model.
 Replace the designated input placeholder with your test input.
-Execute the prompt and examine the generated output.
-Test additional scenarios, including ambiguous, contradictory, and edge-case inputs.
-Compare the results against expected outputs or evaluation criteria.
-
-For dataset-based projects, use the available JSON datasets to test different input scenarios and evaluate prompt performance.
-
+Run the prompt and observe the generated output.
+Test additional cases, including ambiguous, contradictory, and edge-case inputs.
+Compare results against expected outputs using the available dataset.
 🎯 Project Objectives
-Develop reusable and structured prompts for real-world applications.
+Develop reusable and structured prompts.
 Improve classification accuracy and consistency.
 Reduce ambiguity and unsupported assumptions.
 Design robust instruction-following systems.
-Explore practical applications of Generative AI and LLMs.
+Explore practical applications of LLMs.
 Understand the impact of prompt structure on model behaviour.
-Apply prompt engineering techniques across different domains.
+Apply prompt engineering techniques to different real-world domains.
 Develop systematic approaches to prompt testing and evaluation.
 🔬 Future Improvements
-
-The repository will continue to evolve through experimentation and evaluation.
-
-Planned improvements include:
-
-Develop benchmark datasets for individual projects.
+Expand datasets with additional test scenarios.
 Measure accuracy, precision, recall, and F1-score.
 Compare different prompt versions.
 Evaluate edge cases and failure scenarios.
@@ -313,24 +251,14 @@ Measure token consumption and prompt efficiency.
 Build Python-based prompt evaluation tools.
 Compare outputs across different LLMs.
 Explore structured JSON outputs and AI application integration.
-Develop automated prompt testing frameworks.
 Improve prompts through systematic testing and iteration.
-🛠️ Technologies and Areas of Interest
-Generative AI
-Large Language Models (LLMs)
-Prompt Engineering
-Natural Language Processing (NLP)
-Text Classification
-Structured Data and JSON
-AI-Based Information Extraction
-Prompt Evaluation and Optimization
 👨‍💻 Author
 
 Monish Kumar M
 
 MCA Student | AI & Prompt Engineering Enthusiast
 
-Interested in Generative AI, Large Language Models, Natural Language Processing, and developing practical AI-powered applications.
+Interested in Generative AI, Large Language Models, Natural Language Processing, and practical AI applications.
 
 ⭐ Contributions
 
@@ -338,4 +266,4 @@ Suggestions, feedback, and improvements are welcome.
 
 If you find this repository useful, consider giving it a ⭐.
 
-Built to explore, experiment with, evaluate, and improve practical prompt engineering techniques for real-world AI applications.
+Built to explore, experiment with, evaluate, and improve practical prompt engineering for real-world AI applications.
